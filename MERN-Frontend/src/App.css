@@ -1,0 +1,80 @@
+/* body styling */
+#main-content {
+  min-height: 90vh;
+}
+.pageTitle {
+  text-align: center;
+}
+#usersList {
+  padding: 15px;
+}
+.must {
+  top: -0.2em;
+  font-size: 1.1em;
+  color: #d9534f;
+}
+textarea {
+  resize: vertical;
+}
+.errorField {
+  box-shadow: 0px 0px 2px 3px rgb(217, 83, 79);
+}
+span.errorMsg {
+  color: #ffdede;
+  font-weight: 500;
+}
+.btn {
+  font-weight: bold;
+}
+.btnGrp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.table-hover > tbody > tr:hover {
+  background-color: transparent;
+  color: #fff;
+  box-shadow: 0px 0px 6px 2px #fff;
+  cursor: pointer;
+}
+
+.App {
+  /* text-align: center; */
+  background-color: #282c34;
+  min-height: 100vh;
+  color: white;
+}
+
+/* header styling */
+.navbar-inverse {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+  font-weight: 500;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #fff;
+  background-color: #d9534f;
+  border-bottom: 3px solid #fff;
+}
+
+/* footer styling */
+#app-footer {
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#app-footer span {
+  padding: 10px;
+}
