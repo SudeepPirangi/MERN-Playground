@@ -34,7 +34,7 @@ const User = (props) => {
         console.log("Error in fetching User Profile", err);
         alert("Error in fetching User Profile");
       });
-  }, []);
+  }, [userId]);
 
   let formErrors = {
     name: {

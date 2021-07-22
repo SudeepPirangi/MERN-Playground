@@ -30,13 +30,5 @@
     "address": "Kolkata city",
     "location": "Kolkata",
     "gender": "F"
-  },
-  {
-    "id": "5b09fad5-9e05-4df5-99e6-4f1feef7c082",
-    "name": "Thangabali",
-    "age": "20",
-    "address": "Aranyam",
-    "location": "Forest",
-    "gender": "M"
   }
 ]
