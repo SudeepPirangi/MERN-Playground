@@ -5,3 +5,5 @@
 # Backend ignore files
 /MERN-Backend/node_modules
 /MERN-Backend/package-lock.json
+
+/zip version
