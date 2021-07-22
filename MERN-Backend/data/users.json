@@ -1,0 +1,42 @@
+[
+  {
+    "id": "7ec7ed42-d765-47b9-8ea0-f7f546f99d1f",
+    "age": 30,
+    "name": "User 1",
+    "address": "Old City",
+    "location": "Hyderabad",
+    "gender": "M"
+  },
+  {
+    "id": "c9e9fe71-f062-4e1d-9e33-ff11fd3989d6",
+    "age": 25,
+    "name": "User 2",
+    "address": "North Chennai",
+    "location": "Chennai",
+    "gender": "F"
+  },
+  {
+    "id": "ae41c57e-5b24-491e-be74-d047eaccdf2b",
+    "age": 22,
+    "name": "User 3",
+    "address": "Namma Bengaluru",
+    "location": "Bengaluru",
+    "gender": "M"
+  },
+  {
+    "id": "077025aa-0efa-47ab-b753-4d85d9ae9997",
+    "age": "29",
+    "name": "User 4",
+    "address": "Kolkata city",
+    "location": "Kolkata",
+    "gender": "F"
+  },
+  {
+    "id": "5b09fad5-9e05-4df5-99e6-4f1feef7c082",
+    "name": "Thangabali",
+    "age": "20",
+    "address": "Aranyam",
+    "location": "Forest",
+    "gender": "M"
+  }
+]
