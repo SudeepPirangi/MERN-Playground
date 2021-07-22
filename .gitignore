@@ -1,7 +1,7 @@
 # Frontend ignore files
-./MERN-Frontend/node_modules
-MERN-Frontend/package-lock.json
+/MERN-Frontend/node_modules
+/MERN-Frontend/package-lock.json
 
 # Backend ignore files
-MERN-Backend/node_modules
-MERN-Backend/package-lock.json
+/MERN-Backend/node_modules
+/MERN-Backend/package-lock.json
