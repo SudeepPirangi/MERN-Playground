@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import axios from "axios";
 
 const User = (props) => {
@@ -94,11 +94,7 @@ const User = (props) => {
       formErrors.age.msg = "Age cannot be empty";
       formErrors.age.valid = false;
       flag = true;
-    } else if (
-      formData.age <= 0 ||
-      formData.age > 99 ||
-      !numeric.test(formData.age)
-    ) {
+    } else if (formData.age <= 0 || formData.age > 99 || !numeric.test(formData.age)) {
       formErrors.age.msg = "Age must be between 0 & 99";
       formErrors.age.valid = false;
       flag = true;
@@ -160,8 +156,7 @@ const User = (props) => {
           document.getElementById("editUserForm").name.value = user.name;
           document.getElementById("editUserForm").age.value = +user.age;
           document.getElementById("editUserForm").address.value = user.address;
-          document.getElementById("editUserForm").location.value =
-            user.location;
+          document.getElementById("editUserForm").location.value = user.location;
           document.getElementById("editUserForm").gender.value = user.gender;
           alert("User Edited Successfully");
         })
@@ -197,18 +192,12 @@ const User = (props) => {
           </label>
           <input
             type="text"
-            className={
-              !formValidator.name.valid
-                ? "form-control errorField"
-                : "form-control"
-            }
+            className={!formValidator.name.valid ? "form-control errorField" : "form-control"}
             id="name"
             name="name"
             onChange={inputChangeHandler}
           />
-          <span className="errorMsg">
-            {!formValidator.name.valid ? formValidator.name.msg : ""}
-          </span>
+          <span className="errorMsg">{!formValidator.name.valid ? formValidator.name.msg : ""}</span>
         </div>
         <div className="form-group">
           <label htmlFor="age">
@@ -216,35 +205,23 @@ const User = (props) => {
           </label>
           <input
             type="text"
-            className={
-              !formValidator.age.valid
-                ? "form-control errorField"
-                : "form-control"
-            }
+            className={!formValidator.age.valid ? "form-control errorField" : "form-control"}
             id="age"
             name="age"
             onChange={inputChangeHandler}
           />
-          <span className="errorMsg">
-            {!formValidator.age.valid ? formValidator.age.msg : ""}
-          </span>
+          <span className="errorMsg">{!formValidator.age.valid ? formValidator.age.msg : ""}</span>
         </div>
         <div className="form-group">
           <label htmlFor="address">Address: </label>
           <textarea
-            className={
-              !formValidator.address.valid
-                ? "form-control errorField"
-                : "form-control"
-            }
+            className={!formValidator.address.valid ? "form-control errorField" : "form-control"}
             id="address"
             name="address"
             rows="3"
             onChange={inputChangeHandler}
           ></textarea>
-          <span className="errorMsg">
-            {!formValidator.address.valid ? formValidator.address.msg : ""}
-          </span>
+          <span className="errorMsg">{!formValidator.address.valid ? formValidator.address.msg : ""}</span>
         </div>
         <div className="form-group">
           <label htmlFor="location">
@@ -252,27 +229,17 @@ const User = (props) => {
           </label>
           <input
             type="text"
-            className={
-              !formValidator.location.valid
-                ? "form-control errorField"
-                : "form-control"
-            }
+            className={!formValidator.location.valid ? "form-control errorField" : "form-control"}
             id="location"
             name="location"
             onChange={inputChangeHandler}
           />
-          <span className="errorMsg">
-            {!formValidator.location.valid ? formValidator.location.msg : ""}
-          </span>
+          <span className="errorMsg">{!formValidator.location.valid ? formValidator.location.msg : ""}</span>
         </div>
         <div className="form-group">
           <label htmlFor="gender">Gender: </label>
           <select
-            className={
-              !formValidator.gender.valid
-                ? "form-control errorField"
-                : "form-control"
-            }
+            className={!formValidator.gender.valid ? "form-control errorField" : "form-control"}
             id="gender"
             name="gender"
             onChange={inputChangeHandler}
@@ -280,24 +247,16 @@ const User = (props) => {
             <option value="M">Male</option>
             <option value="F">Female</option>
           </select>
-          <span className="errorMsg">
-            {!formValidator.gender.valid ? formValidator.gender.msg : ""}
-          </span>
+          <span className="errorMsg">{!formValidator.gender.valid ? formValidator.gender.msg : ""}</span>
         </div>
         <div className="btnGrp">
-          <button
-            type="submit"
-            className="btn btn-success"
-            style={{ marginTop: 20 }}
-          >
+          <Link to="/" className="btn btn-primary" style={{ marginTop: 20 }}>
+            Home
+          </Link>
+          <button type="submit" className="btn btn-success" style={{ marginTop: 20 }}>
             Edit User
           </button>
-          <button
-            type="button"
-            className="btn btn-danger"
-            style={{ marginTop: 20 }}
-            onClick={deleteUser}
-          >
+          <button type="button" className="btn btn-danger" style={{ marginTop: 20 }} onClick={deleteUser}>
             Delete User
           </button>
         </div>
